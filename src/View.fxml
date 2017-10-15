@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+
+<BorderPane fx:id="borderpane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="100.0" prefHeight="700.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <center>
+      <Canvas fx:id="canvas" cacheHint="SPEED" height="675.0" width="1024.0" />
+   </center>
+   <top>
+      <HBox maxHeight="25.0" maxWidth="1.7976931348623157E308" minWidth="100.0" prefHeight="25.0" prefWidth="1024.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="openButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" text="Open..." HBox.hgrow="ALWAYS" />
+            <Region prefHeight="25.0" prefWidth="28.0" HBox.hgrow="NEVER" />
+            <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Contrast  " HBox.hgrow="NEVER" />
+            <Slider fx:id="contrastSlider" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="25.0" minWidth="10.0" prefHeight="25.0" prefWidth="10.0" HBox.hgrow="ALWAYS" />
+            <TextField fx:id="contrastTextField" alignment="CENTER" prefHeight="25.0" prefWidth="60.0" HBox.hgrow="NEVER" />
+            <Region prefHeight="25.0" prefWidth="25.0" />
+            <ToggleButton fx:id="showSkinToggleButton" mnemonicParsing="false" text="Show Skin" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+   </top>
+</BorderPane>
